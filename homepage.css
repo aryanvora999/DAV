@@ -1,0 +1,37 @@
+.homepage1
+{
+    background-color: white;
+}
+a:link
+{
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+  }
+#brands
+{
+    border: none;
+}
+a:hover {
+    text-decoration:none;
+  }
+  
+a:active {
+    text-decoration: none;
+  }
+a{
+    color: blueviolet;
+}
+.navbar
+{
+    margin-top: 0px;
+    height: 4rem;
+    width: 95%;
+    background-color: red;
+    border-radius: 40px;
+}
+body
+{
+    padding-bottom: 0;
+}
