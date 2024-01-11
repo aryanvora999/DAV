@@ -5,28 +5,59 @@
 	background-color: #FFE4C4;
 }
 form{
+    font-family: 'BenchNine', sans-serif;
     background-color: white;
+    color:  rgb(150, 149, 149);
+    font-size: 1.1rem;
 }
 .SignIn{
-    height: 40%;
-    width: 30%;
+    height: 33rem;
+    width: 25%;
     background-color: white;
     padding: 3%;
-    margin-top: 12%;
+    margin-top: 6%;
     margin-left: 35%;
     border-radius: 15px;
 }
 input{
+    margin-top: 1%;
+    font-size: 1.1rem;
+    font-family: 'BenchNine', sans-serif;
     width: 100%;
     padding: 3%;
     border-radius: 10px;
     background-color: white;
+    border-color: rgb(150, 149, 149);
 }
 button{
+    font-size: 1.3rem;
+    font-family: 'BenchNine', sans-serif;
+    color: white;
     width: 100%;
     padding: 3%;
     border-radius: 25px;
     text-align: center;
     border: 0;
     background-image: linear-gradient(to right, #d88142, #fda86b);
+}
+p{
+    background-color: white;
+}
+#newAcc{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(150, 149, 149);
+}
+#forgot{
+    text-align: right;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(150, 149, 149);
+}
+#welcome{
+    margin-top: 0;
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Berkshire Swash', serif;
+    color: black;
 }
