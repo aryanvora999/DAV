@@ -16,13 +16,71 @@
         href="https://fonts.googleapis.com/css2?family=BenchNine&family=Berkshire+Swash&family=Josefin+Sans:wght@500&display=swap"
         rel="stylesheet">
 </head>
+<script>
+
+function validateform()
+{
+
+    x=document.forms.username.value;
+        z=document.forms.password1.value;
+        y=document.forms.password2.value;
+
+//Username
+
+        if (x=="" || x==null)
+    {  
+        alert("Username can't be blank");  
+        return false;
+    }
+
+    if(x.length<6)
+    {
+        alert("Atleast 6 characters needed...")
+        return false;
+    }
+        
+        
+        
+        //Password
+    let zp=z.match(/[A-Z]/)
+    let zi=z.match(/[a-z]/)
+    let zk=z.match(/[0-9]/)
+    let zs=z.match(/[!@#$%^&*]/)
+
+    
+    if (z=="" || z==null )
+    {  
+        alert("Password can't be blank");  
+        return false;
+    }
+
+    if(zp==null || zi==null || zk==null || zs==null)
+    {
+    alert("Strong Password Needed!!");
+    return false;
+
+    }
+
+  
+    if(y!=z)
+    {
+        alert("Passwords Dont match...")
+    }
+
+    }
+
+
+
+
+
+</script>
 
 <body>
     <div class="SignUp">
-        <form action="">
+        <form name="forms" onsubmit="return validateform()">
             <p id="welcome">Hello!</p><br>
             Username: <br>
-            <input type="text" id="name" placeholder="Enter a Username"> <br><br>
+            <input type="text" id="name" placeholder="Enter a Username" name="username"> <br><br>
             Add address details: <br><br>
             <table>
                 <tr>
@@ -62,9 +120,9 @@
                 </tr>
             </table>
             Password: <br>
-            <input type="password" id="password" placeholder="Set a Password"> <br><br>
+            <input type="password" id="password" placeholder="Set a Password" name="password1"> <br><br>
             Confirm Password: <br>
-            <input type="password" id="confirmPwd" placeholder="Confirm Password"> <br><br><br>
+            <input type="password" id="confirmPwd" placeholder="Confirm Password" name="password2"> <br><br><br>
             <a href="#"><button type="submit" onclick="signUp()">Sign Up</button></a>
         </form>
     </div>
