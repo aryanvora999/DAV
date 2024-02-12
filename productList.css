@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FFE4C4;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+i {
+    transition: 0.3s;
+
+}
+
+i:hover {
+    transform: scale(1.1);
+}
+
+.navbar a {
+
+    color: #59483C;
+    margin-left: 55px;
+    font-family: 'Bellota', sans-serif;
+    font-size: 23px;
+    margin-top: 34px;
+    float: left;
+    transition: 0.3s;
+}
+
+
+#cococraft {
+    font-size: 45px;
+    font-family: 'Berkshire Swash', serif;
+    margin-left: 10rem;
+    margin-top: 20px;
+}
+
+#searchbar {
+    margin-left: 11rem;
+    border-radius: 25px;
+    height: 40px;
+    width: 290px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    margin-top: 28px;
+
+}
+
+#searchicon {
+    float: none;
+    margin-left: 0.6rem;
+
+
+}
+
+.navbar {
+    margin-top: 30px;
+    margin-left: 90px;
+    height: 100px;
+    width: 90%;
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-family: 'Bellota', sans-serif;
+    font-size: 20px;
+}
+
+.dropdown .dropbtn {
+    font-size: 23px;
+    border: none;
+    outline: none;
+    color: #59483C;
+    padding: 34px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin-left: 70px;
+    transition: 0.3s;
+
+}
+
+
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+
+    transform: scale(1.2);
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 135px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: 70px;
+
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.filterSort {
+    margin-top: 3%;
+    margin-left: 4%;
+    width: 90%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.filterSort ul li {
+    list-style: none;
+    padding: 1rem;
+    float: left;
+    font-size: 1.4rem;
+    border-radius: 3%;
+}
+
+.filterSort ul li {
+    text-decoration: none;
+    color: #59483C;
+}
+
+.filterSort ul li .active {
+    background: var(#59483C);
+}
+
+.filterCondition {
+    padding: 3%;
+    height: 10rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.filterCondition select {
+    width: 9vw;
+    padding: 0 0 0 1%;
+    border: none;
+    outline: none;
+    color: #59483C;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.product-field {
+    padding: 4% 2%;
+}
+
+.product-field ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-field ul li {
+    list-style: none;
+    width: 23.4%;
+    height: 400px;
+    transition: 0.5s all;
+    background: #FFE4C4;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 200px 10px 0 10px;
+    position: relative;
+}
+
+picture {
+    padding: 1%;
+    position: absolute;
+    right: 0;
+    bottom: 41%;
+    width: 75%;
+    height: 85%;
+    border-radius: 50px 20px 0 20px;
+    /* transform: skewY(40deg); */
+    overflow: hidden;
+    box-shadow: 0px 1px 0px #00000020, -1px 0px 0px #ccc;
+}
+
+picture img {
+    width: 95%;
+    z-index: 1%;
+    /* transform: skewY(-40deg); */
+    padding: 25px 0 0 0;
+}
+
+.detail {
+    width: 100%;
+    height: 100%;
+}
+
+.detail .icon {
+    width: 30%;
+    height: 55%;
+    padding: 20px 5px;
+}
+
+.icon span {
+    background: #00000030;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    margin: 0 0 20px 5px;
+    font-size: 20px;
+    color: #59483C;
+}
+
+.icon span:hover {
+    cursor: pointer;
+}
+
+.detail>h2 {
+    display: inherit;
+    margin: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: #59483C;
+}
+
+.detail>span {
+    display: inherit;
+    padding: 0 20px;
+    width: 80%;
+}
+
+.detail button {
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid #59483C;
+    cursor: pointer;
+    background-color: white;
+}
+
+.detail button:hover {
+    
+    color: white;
+    background-color: #59483C;
+}
+li h3{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    font-size: 30px;
+    color: #555;
+    text-shadow: 1px 1px 2px black;
+}
