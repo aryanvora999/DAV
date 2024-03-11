@@ -1,0 +1,80 @@
+.review{
+    margin-left: 32.5%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-color: white;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 35%;
+    /* height: 21rem; */
+    padding: 1%;
+    color: #59483C;
+    font-family: 'Bellota', sans-serif;
+}
+.review>p{
+    font-size: 20px;
+    margin-top: 2%;
+}
+.stars{
+    display: inline-flex;
+}
+.one {
+    color: #e19259;
+}
+ 
+.two {
+    color: #e19259;
+}
+ 
+.three {
+    color: #e19259;
+}
+ 
+.four {
+    color: #e19259;
+}
+ 
+.five {
+    color: #e19259;
+}
+textarea{
+    width: 70%;
+    padding: 1%;
+    margin-top: 3%;
+    font-size: 18px;
+    font-family: 'Bellota', sans-serif;
+}
+.stars{
+    cursor: pointer;
+    font-size: 38px;
+}
+.rating{
+    font-size: 20px;
+    margin-top: 2%;
+}
+.sub>button{
+    width: 18%;
+    font-size: 17px;
+    padding: 1%;
+    margin-top: 1.5%;
+    background-color: #59483C;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Bellota', sans-serif;
+}
+.userRev {
+    margin-top: 5%;
+    text-align: left;
+    width: auto;
+}
+.feedback {
+    border: 2px solid #59483C;
+    border-radius: 4px;
+    padding: 1%;
+    margin-top: 3%;
+}
+.feedback p {
+    margin: 0;
+}
