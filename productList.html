@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="productList.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Serif' rel='stylesheet'>
+    <link rel="stylesheet" href="review.css">
     <title>CocoCraft</title>
 </head>
 
@@ -33,13 +35,13 @@
         <a id="searchicon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         <a style="float: none;"><i class="fa-solid fa-cart-shopping"></i></i></a>
     </div>
-    <div class="filterSort">
+    <!-- <div class="filterSort">
         <ul class="indicator">
             <li data-filter="all" class="active"><a href="#">All</a></li>
             <li data-filter="milk" class="active"><a href="#">Milk Chocolates</a></li>
             <li data-filter="white" class="active"><a href="#">White Chocolates</a></li>
             <li data-filter="dark" class="active"><a href="#">Dark Chocolates</a></li>
-        </ul>
+        </ul> -->
         <div class="filterCondition">
             <span>Veiw as a</span>
             <select name="" id="select">
@@ -158,6 +160,25 @@
             </li>
         </ul>
     </div>
+    <div class="review">
+        <h1>Product Reviews</h1>
+        <div class="rating">
+            <span id="rating">0</span>/5
+        </div>
+        <div class="stars" id="stars">
+            <div class="star" data-value="1">&#9733;</div>
+            <div class="star" data-value="2">&#9733;</div>
+            <div class="star" data-value="3">&#9733;</div>
+            <div class="star" data-value="4">&#9733;</div>
+            <div class="star" data-value="5">&#9733;</div>
+        </div>
+        <p>Share your experience</p>
+        <textarea id="feedback" cols="30" rows="4" placeholder="Write your experience with us here"></textarea>
+        <div class="sub" id="submit"><button type="button">Share!</button></div>
+        <div class="userRev" id="userRev"></div>
+        </div>
+    </div>
+    <script src="reviews.js"></script>
     <script src="sort.js"></script>
 </body>
 
