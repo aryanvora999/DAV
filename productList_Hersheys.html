@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="productList.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Serif' rel='stylesheet'>
+    <link rel="stylesheet" href="review.css">
+    <title>CocoCraft</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a id="shop">Shop</a>
+        <div class="dropdown">
+            <button class="dropbtn">Brands
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Hersheys</a>
+                <a href="#">Kitkat</a>
+                <a href="#">Lindt</a>
+            </div>
+        </div>
+        <a href="">Contact us</a>
+        <a id="cococraft">CocoCraft</a>
+        <input id="searchbar" type="text">
+        <a id="searchicon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a style="float: none;"><i class="fa-solid fa-cart-shopping"></i></i></a>
+    </div>
+    <!-- <div class="filterSort">
+        <ul class="indicator">
+            <li data-filter="all" class="active"><a href="#">All</a></li>
+            <li data-filter="milk" class="active"><a href="#">Milk Chocolates</a></li>
+            <li data-filter="white" class="active"><a href="#">White Chocolates</a></li>
+            <li data-filter="dark" class="active"><a href="#">Dark Chocolates</a></li>
+        </ul> -->
+        <div class="filterCondition">
+            <span>View as a:</span>
+            <select name="" id="select">
+                <option value="default">Default</option>
+                <option value="lowToHigh">Low To High</option>
+                <option value="highToLow">High To Low</option>
+            </select>
+        </div>
+    </div>
+    <div class="product-field">
+        <ul class="items">
+            <!-- 1 -->
+            <li data-category="" data-price="">
+                <picture>
+                    <img  src="https://cdn11.bigcommerce.com/s-h711h5/images/stencil/1280x1280/products/69/4768/hersheys_cookies_creme_43g__12206.1706053806.jpg?c=2" alt="">
+                </picture>
+                <div class="detail">
+                   
+                    <h2>Cookies N Creme</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                    
+                </div>
+                <h3><span>&#8377;</span>120</h3>
+               
+            </li>
+            <!-- 2 -->
+            <li data-category="" data-price="">
+                <picture>
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/foodie-1572285335.jpg" alt="">
+                </picture>
+                <div class="detail">
+                   
+                    <h2>Reese's Pieces</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>80</h3>
+            </li>
+            <!-- 3 -->
+            <li data-category="" data-price="">
+                <picture>
+                    <img src="https://junkbanter.com/wp-content/uploads/2016/08/FullSizeRender_2-3.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    
+                    <h2>Caramel Apple</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>160</h3>
+            </li>
+            <!-- 4 -->
+            <li data-category="" data-price="">
+                <picture>
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/kylvr0w0/chocolate/b/c/i/39-cookies-n-mint-white-chocolate-imported-2-x-39g-2-hershey-s-original-imagatfesnjhvxxv.jpeg?q=90&crop=false" alt="">
+                </picture>
+                <div class="detail">
+                    
+                    <h2>Cookies And Mint</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>90</h3>
+            </li>
+            <!-- 5 -->
+            <li data-category="" data-price="">
+                <picture>
+                    <img src="https://cdn.images.express.co.uk/img/dynamic/14/750x445/1090351.jpg" alt="">
+                </picture>
+                <div class="detail">
+                   
+                    <h2>Green Tea The Vert</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>100</h3>
+            </li>
+            <!-- 6 -->
+            <li data-category="">
+                <picture>
+                    <img src="https://neelamfoodlandmumbai.com/cdn/shop/products/IMG_4539_dd81a409-240d-4e08-a846-94686609fe42_1024x1024.jpg?v=1623669965" alt="">
+                </picture>
+                <div class="detail">
+                    
+                    <h2>Dark</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>110</h3>
+            </li>
+            <!-- 7 -->
+            <li data-category="" data-price="">
+                <picture>
+                    <img src="https://i.pinimg.com/564x/8f/46/81/8f46816281c501b13802af01a081176f.jpg" alt="">
+                    
+                </picture>
+                <div class="detail">
+                    
+                    <h2 style="margin-left: -15px;">Mint+Dark Chocolate</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>140</h3>
+            </li>
+
+            <!-- 8 -->
+
+            <li data-category="" data-price="">
+                <picture>
+                    <img src="https://i.pinimg.com/originals/19/6b/b8/196bb84d13f472fd6d5339bb4b0209cb.png" alt="">
+                </picture>
+                <div class="detail">
+                    
+                    <h2 style=>Ocean Salt</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>240</h3>
+            </li>
+            <!-- 9 -->
+
+            <li data-category="" data-price="">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/41sOc-zi9eL._AC_UF894,1000_QL80_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    
+                    <h2 style=>Red Velvet</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>210</h3>
+            </li>
+
+            
+        </ul>
+    </div>
+    <br><br><br><br><br><br><br>
+   
+    <script src="sort.js"></script>
+
+
+    <footer class="footer">
+            
+        <div class="container">
+           
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Chocolates</a></li>
+                        <li><a href="#">gifts</a></li>
+                        <li><a href="#">cookies</a></li>
+                        <li><a href="#">---</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a class="social" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+
+</html>
