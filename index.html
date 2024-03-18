@@ -10,18 +10,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="homepage.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+     
+
+ 
+    
     <title>CocoCraft</title>
+    <style>
+        /* Carousel container */
+        .carousel {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+    
+        /* Slides */
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+    
+        .carousel-item {
+            flex: 0 0 100%; /* Set width of individual slide */
+        }
+    
+        /* Navigation buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            z-index: 1;
+        }
+    
+        .prev {
+            left: 0;
+        }
+    
+        .next {
+            right: 0;
+        }
+    </style>
 </head>
 
 <body class="homepage1">
     <!-- Navbar -->
     <div class="navbar">
-        <a id="shop">Shop</a>
+      
         <div class="dropdown">
             <button class="dropbtn">Brands
                 <i class="fa-solid fa-chevron-down"></i>
@@ -30,49 +71,48 @@
                 <a href="#">Hersheys</a>
                 <a href="#">Kitkat</a>
                 <a href="#">Lindt</a>
+                <a href="#">Toblerone</a>
+                <a href="#">Milka</a>
+                <a href="#">Royce</a>
+                <a href="#">Galaxy</a>
+                <a href="#">Godiva</a>
+                <a href="#">Snickers</a>
             </div>
         </div>
-        <a href="">Contact us</a>
+        <a href="" id="contactus">Contact us</a>
         <a id="cococraft">CocoCraft</a>
         <input id="searchbar" type="text">
         <a id="searchicon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         <a style="float: none;"><i class="fa-solid fa-cart-shopping"></i></i></a>
     </div>
+    <br>   <br>   <br>   <br>
     <!-- carousel -->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img src="https://w0.peakpx.com/wallpaper/87/858/HD-wallpaper-chocolate-delight-piece-white-chocolate-dark.jpg"
-                    style="height: 60vh;" class="d-block w-auto" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://media.istockphoto.com/id/522735736/photo/chocolate-background.jpg?s=612x612&w=0&k=20&c=fmBbjHi5zXpcbzAQWGy3xtPgcIJkc7eHXjZiYsi396A="
-                    style="height: 60vh;" class="d-block w-auto" alt="...">
+            <div class="carousel-item">
+                <img src="https://w0.peakpx.com/wallpaper/87/858/HD-wallpaper-chocolate-delight-piece-white-chocolate-dark.jpg" alt="Slide 1">
             </div>
             <div class="carousel-item">
-                <img src="https://i.pinimg.com/564x/49/30/00/4930001230d09261cf09cdbecb42deef.jpg" style="height: 60vh;"
-                    class="d-block w-auto" alt="...">
+                <img src="https://media.istockphoto.com/id/522735736/photo/chocolate-background.jpg?s=612x612&w=0&k=20&c=fmBbjHi5zXpcbzAQWGy3xtPgcIJkc7eHXjZiYsi396A=" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/564x/49/30/00/4930001230d09261cf09cdbecb42deef.jpg" alt="Slide 3">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    
+        <!-- Navigation buttons -->
+        <div class="prev" onclick="prevSlide()">&#10094;</div>
+        <div class="next" onclick="nextSlide()">&#10095;</div>
     </div>
-    </div>
+   
     <!-- Flex Cards -->
+    <br><br><br><br><br><br>
     <div class="products">
-        <h6>Discover our</h6>
+        <h6 style="font-size: 40px;">Discover our</h6>
         <h1>Products</h1>
     </div>
 
-    <div class="product-categories">
+    <div class="product-categories" >
         <div class="cards">
             <figure class="chocolates">
                 <img src="https://i.pinimg.com/564x/79/d9/41/79d941ceebf0a0035ab00c9c2a224cfc.jpg">
@@ -85,8 +125,8 @@
                 </figcaption>
             </figure>
         </div>
-        <div class="cards">
-            <figure class="chocolates">
+        <div class="cards" >
+            <figure class="chocolates" >
                 <img src="https://i.pinimg.com/564x/e7/0b/55/e70b55efac49257ccc5069aab6de8dff.jpg">
                 <figcaption>
                     <div>
@@ -147,10 +187,10 @@
         </div>
         <div class="cards">
             <figure class="chocolates">
-                <img src="https://i.pinimg.com/564x/80/8c/b9/808cb9968b113b6c6a47315b8e0bf851.jpg">
+                <img src="https://www.halfbakedharvest.com/wp-content/uploads/2021/01/Easy-Homemade-Vegan-Snickers-9.jpg">
                 <figcaption>
                     <div>
-                        <h2>Ferroro Rocher</h2>
+                        <h2>Snickers</h2>
                     </div>
                     <div><span>Buy Now</span></div>
                     <a href="#" style="text-decoration: none;"></a>
@@ -163,6 +203,18 @@
                 <figcaption>
                     <div>
                         <h2>Royce</h2>
+                    </div>
+                    <div><span>Buy Now</span></div>
+                    <a href="#" style="text-decoration: none;"></a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="cards">
+            <figure class="chocolates">
+                <img src="https://www.avasflowers.net/img/prod_img/avasflowers-godiva-milk-chocolate-expressions.jpg">
+                <figcaption>
+                    <div>
+                        <h2>Godiva</h2>
                     </div>
                     <div><span>Buy Now</span></div>
                     <a href="#" style="text-decoration: none;"></a>
@@ -219,7 +271,34 @@
             </div>
         </div>
     </footer>
-
+    
+    <script>
+        // JavaScript for carousel functionality
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.querySelectorAll('.carousel-item');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 10000); // Change slide every 2 seconds
+        }
+    
+        function prevSlide() {
+            slideIndex -= 2;
+            showSlides();
+        }
+    
+        function nextSlide() {
+            showSlides();
+        }
+    </script>
 </body>
 
 </html>
