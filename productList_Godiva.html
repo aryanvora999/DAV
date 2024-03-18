@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="productList.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Serif' rel='stylesheet'>
+    <link rel="stylesheet" href="review.css">
+    <title>CocoCraft</title>
+    <style>
+        p {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+  
+        <div class="dropdown">
+            <button class="dropbtn">Brands
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Hersheys</a>
+                <a href="#">Kitkat</a>
+                <a href="#">Lindt</a>
+                <a href="#">Toblerone</a>
+                <a href="#">Milka</a>
+                <a href="#">Royce</a>
+                <a href="#">Galaxy</a>
+                <a href="#">Godiva</a>
+                <a href="#">Snickers</a>
+            </div>
+        </div>
+        <a href="" id="contactus">Contact us</a>
+        <a id="cococraft">CocoCraft</a>
+        <input id="searchbar" type="text">
+        <a id="searchicon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a style="float: none;"><i class="fa-solid fa-cart-shopping"></i></i></a>
+    </div>
+    <!-- <div class="filterSort">
+        <ul class="indicator">
+            <li data-filter="all" class="active"><a href="#">All</a></li>
+            <li data-filter="milk" class="active"><a href="#">Milk Chocolates</a></li>
+            <li data-filter="white" class="active"><a href="#">White Chocolates</a></li>
+            <li data-filter="dark" class="active"><a href="#">Dark Chocolates</a></li>
+        </ul> -->
+        <div class="filterCondition">
+            <span>View as a:</span>
+            <select name="" id="select">
+                <option value="default">Default</option>
+                <option value="lowToHigh">Low To High</option>
+                <option value="highToLow">High To Low</option>
+            </select>
+        </div>
+    </div>
+    <div class="product-field">
+        <ul class="items">
+            <!-- 1 -->
+           <!-- 1 -->
+           <li data-category="" data-price="">
+            <div class="product-container">
+                <picture>
+                    <img src="images/godiva (1).jpg" alt="">
+                </picture>
+                <div class="description">
+                    <p>A decadent dark chocolate star bursting with the tangy sweetness of raspberry filling.</p>
+                </div>
+            </div>
+            <div class="detail">
+                <h2>Chocolate Raspberry</h2>
+                <a href="#"><button>Buy Now</button></a>
+            </div>
+            <h3><span>&#8377;</span>120</h3>
+        </li>
+            <!-- 2 -->
+            <li data-category="" data-price="">
+                <div class="product-container">
+                    <picture>
+                        <img src="images/godiva (2).jpg" alt="">
+                    </picture>
+                    <div class="description">
+                        <p> Indulge in the perfect balance of rich caramel and delicate sea salt embraced by luxurious chocolate.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <h2>Sea Salt Caramel</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>120</h3>
+            </li> <li data-category="" data-price="">
+                <div class="product-container">
+                    <picture>
+                        <img src="images/godiva (3).jpg" alt="">
+                    </picture>
+                    <div class="description">
+                        <p>Savor the intense richness of 72% dark cacao chocolate, delivering a deeply satisfying cocoa experience.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <h2>72% Dark Chocolate</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>120</h3>
+            </li> <li data-category="" data-price="">
+                <div class="product-container">
+                    <picture>
+                        <img src="images/godiva (4).jpg" alt="">
+                    </picture>
+                    <div class="description">
+                        <p>A harmonious blend of bold dark chocolate with a hint of sea salt for an elevated taste sensation.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <h2>Sea Salt Dark</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>120</h3>
+            </li> <li data-category="" data-price="">
+                <div class="product-container">
+                    <picture>
+                        <img src="images/godiva (5).jpg" alt="">
+                    </picture>
+                    <div class="description">
+                        <p>A smooth and creamy delight that wraps your senses in the comforting warmth of classic milk chocolate.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <h2>Milk Chocolate</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>120</h3>
+            </li> <li data-category="" data-price="">
+                <div class="product-container">
+                    <picture>
+                        <img src="images/godiva (6).jpg"
+                        alt="">
+                    </picture>
+                    <div class="description">
+                        <p>A luscious milk chocolate infused with crunchy almonds and the subtle sweetness of honey for a comforting embrace of flavors.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <h2>Almond & Honey</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>120</h3>
+            </li> <li data-category="" data-price="">
+                <div class="product-container">
+                    <picture>
+                        <img src="images/godiva (7).jpg" alt="">
+                    </picture>
+                    <div class="description">
+                        <p>Experience the perfect harmony of rich, velvety dark chocolate with the satisfying crunch of roasted almonds, a delectable indulgence for the senses.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <h2 style="margin-left: -20px;">Roasted Almond</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>120</h3>
+            </li> <li data-category="" data-price="">
+                <div class="product-container">
+                    <picture>
+                        <img src="images/godiva (8).jpg" alt="">
+                    </picture>
+                    <div class="description">
+                        <p> An enticing assortment of chocolates offering a symphony of flavors, textures, and delights to satisfy every craving and tantalize the taste buds.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <h2>Assorted Chocolates</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>400</h3>
+            </li>
+            <li data-category="" data-price="">
+                <div class="product-container">
+                    <picture>
+                        <img src="images/godiva (9).jpg" alt="">
+                    </picture>
+                    <div class="description">
+                        <p>Savor the comforting warmth of velvety dark chocolate in every sip of this indulgent hot cocoa, a luxurious treat for cozy moments.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <h2>Hot Cocoa</h2>
+                    <a href="#"><button>Buy Now</button></a>
+                </div>
+                <h3><span>&#8377;</span>600</h3>
+            </li>
+        </ul>
+    </div>
+    <br><br><br><br><br><br><br>
+   
+    <script src="sort.js"></script>
+
+
+    <footer class="footer">
+            
+        <div class="container">
+           
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Chocolates</a></li>
+                        <li><a href="#">gifts</a></li>
+                        <li><a href="#">cookies</a></li>
+                        <li><a href="#">---</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a class="social" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+
+</html>
