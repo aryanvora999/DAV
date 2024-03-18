@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #fedbb0;
+    background-color: #f6e9da;
 }
 
 a:link {
@@ -43,12 +43,15 @@ i:hover {
     float: left;
     transition: 0.3s;
 }
-
+#contactus
+{
+    margin-left: 100px;
+}
 
 #cococraft {
     font-size: 45px;
     font-family: 'Berkshire Swash', serif;
-    margin-left: 6rem;
+    margin-left: 8rem;
     margin-top: 20px;
 }
 
@@ -204,7 +207,9 @@ i:hover {
     height: 500px;
     transition: 0.5s all;
     background-color: black;
-    border-radius: 20px;
+    
+
+
     padding: 10px;
     margin: 150px 10px 0 90px;
     position: relative;
@@ -214,6 +219,8 @@ i:hover {
 .product-field ul li:hover
 {
     transform: scale(1.1);
+   
+ 
 }
 
 picture {
@@ -222,7 +229,7 @@ picture {
     right: 0;
     bottom: 41%;
     width: 99%;
-    height: 65%;
+    height: 95%;
     border-radius: 20px 20px 0 0px;
     /* transform: skewY(40deg); */
     overflow: hidden;
@@ -236,16 +243,19 @@ picture {
 
 picture img {
 
-    height: 100%;
+    height: 340px;
     width: 100%;
     z-index: 1%;
+    transition: ease 0.6s;
+    
     /* transform: skewY(-40deg); */
  
 }
 
+
 .detail {
     width: 100%;
-   margin-top: 370px;
+  margin-top: 50px;
    margin-left: 30px;
 }
 
@@ -317,9 +327,60 @@ li h3{
     top: 50%;
     font-size: 30px;
     color: white;
-    margin-top: 105px;
+    margin-top: 125px;
 
     text-shadow: 1px 1px 2px black;
+}
+.product-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-container picture {
+    position: relative; 
+}
+
+.description {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 0; 
+    background-color: rgba(0, 0, 0, 0.);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: height 0.6s cubic-bezier(0.25, 0.1, 0.25, 1); 
+    border-radius: 20px;
+    transform: translateY(40%); 
+}
+
+.product-container:hover .description {
+    height: 100%; 
+    transform: translateY(0); 
+}
+
+.description h3,
+.description p {
+  
+    opacity: 0; 
+}
+
+.product-container:hover .description h3,
+.product-container:hover .description p {
+    opacity: 117; 
+    font-size: larger   ;
+    line-height: 28px;
+    font-weight: 400;
+
+}
+
+.product-container:hover picture{
+    -webkit-filter: blur(5px);
+	filter: blur(5px);
 }
 
 
